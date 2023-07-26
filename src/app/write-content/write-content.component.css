@@ -1,15 +1,18 @@
 .container {
-    border: 1px solid black;
     text-align: center;
+    background-color: rgb(90, 173, 173);
+    margin: 5rem;
+    border-radius: 2rem;
+    box-shadow: 10px 10px 15px rgb(90, 173, 173);
+    padding: 1rem 10px;
 }
 
 .main {
     margin: 2rem 20px;
     display: flex;
     flex-direction: column;
-    padding: 5rem;
+    padding: 2rem;
     text-align: center;
-    border: 1px solid brown;
 }
 
 .container p {
@@ -24,6 +27,7 @@
     padding: 20px;
     background-color: rgb(235, 235, 235);
     border-radius: 1rem;
+    border: none;
 }
 
 .main textarea {
@@ -38,7 +42,7 @@
 }
 
 .container button {
-    height: 40px;
+    height: 60px;
     width: 20%;
     cursor: pointer;
     margin-bottom: 1rem;
@@ -46,4 +50,10 @@
     border: none;
     opacity: 0.8;
     color: white;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.container button:hover {
+    opacity: 0.6;
 }
