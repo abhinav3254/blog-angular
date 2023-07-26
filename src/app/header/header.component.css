@@ -1,0 +1,33 @@
+.main {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rebeccapurple;
+    margin: 0px 20px;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.left p {
+    text-align: center;
+    margin-left: 5rem;
+}
+
+.right {
+    border: 1px solid greenyellow;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.right img {
+    width: 40px;
+    cursor: pointer;
+}
