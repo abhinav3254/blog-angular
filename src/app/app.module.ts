@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BlogContentComponent } from './blog-content/blog-content.component';
 import { WriteContentComponent } from './write-content/write-content.component';
 import { ContentFooterComponent } from './content-footer/content-footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContentFooterComponent } from './content-footer/content-footer.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

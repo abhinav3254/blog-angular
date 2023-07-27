@@ -1,0 +1,14 @@
+{
+  "blogs": [
+    {
+      "title": "Science",
+      "content": "This is content",
+      "id": 1
+    },
+    {
+      "title": "blog title ||",
+      "content": "this is blog content",
+      "id": 2
+    }
+  ]
+}
