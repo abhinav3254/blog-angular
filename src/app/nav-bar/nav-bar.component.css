@@ -8,6 +8,10 @@
     box-shadow: 10px 10px 20px rgb(106, 105, 105);
 }
 
+.logo {
+    font-family: cursive;
+}
+
 .nav-bar p {
     flex: .3;
     padding: 10px;
