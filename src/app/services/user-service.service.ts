@@ -13,4 +13,10 @@ export class UserServiceService {
     const url = 'http://localhost:3000/blogs';
     return this.http.post<any>(url, user);
   }
+
+  public getUser(): Observable<any> {
+    const url = 'http://localhost:3000/blogs';
+    return this.http.get<any>(url);
+  }
+
 }
