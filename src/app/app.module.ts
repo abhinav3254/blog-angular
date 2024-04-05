@@ -8,6 +8,8 @@ import { DetailComponent } from './components/detail/detail.component';
 import { NavComponent } from './components/nav/nav.component';
 import { BlogContainerComponent } from './components/blog-container/blog-container.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
+import { AuthComponent } from './components/auth/auth.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { BlogDetailsComponent } from './components/blog-details/blog-details.com
     DetailComponent,
     NavComponent,
     BlogContainerComponent,
-    BlogDetailsComponent
+    BlogDetailsComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
