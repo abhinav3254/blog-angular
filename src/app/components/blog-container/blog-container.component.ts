@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import { BlogModel } from 'src/interfaces/Blog';
 
 @Component({
   selector: 'app-blog-container',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog-container.component.scss']
 })
 export class BlogContainerComponent {
+
+  @Input() singleBlog!:BlogModel;
 
 }

@@ -1,1 +1,4 @@
-<p>home works!</p>
+
+<div class="home" *ngFor="let blog of blogs">
+    <app-blog-container [singleBlog]="blog"></app-blog-container>
+</div>
