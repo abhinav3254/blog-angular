@@ -8,6 +8,7 @@
     position: fixed;
     width: calc(100% - 10px);
     background-color: white;
+    z-index: 1;
 
     img {
         height: 40px;
@@ -53,5 +54,23 @@
                 }
             }
         }
+    }
+}
+
+.dropdown {
+    display: block;
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 80px;
+        right: 10px;
+        margin: 0px 5px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    &:hover .dropdown-content {
+        display: block;
     }
 }
