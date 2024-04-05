@@ -3,26 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { BlogContentComponent } from './blog-content/blog-content.component';
-import { WriteContentComponent } from './write-content/write-content.component';
-import { ContentFooterComponent } from './content-footer/content-footer.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './components/home/home.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    NavBarComponent,
-    BlogContentComponent,
-    WriteContentComponent,
-    ContentFooterComponent
+    HomeComponent,
+    DetailComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
