@@ -12,6 +12,10 @@
 
     img {
         height: 40px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .searchbar {
@@ -51,6 +55,7 @@
 
                 &:hover {
                     cursor: pointer;
+                    color: #2962FF;
                 }
 
                 .dropdownitems {
@@ -61,12 +66,12 @@
                     padding: 2px 5px;
 
                     img {
-                        width: 15px;
-                        height: 15px;
+                        width: 20px;
+                        height: 20px;
                     }
 
                     p {
-                        font-size: 12px;
+                        font-size: 15px;
                         margin: 0 0 0 5px;
                     }
 
