@@ -1,7 +1,29 @@
 import { useState } from 'react'
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Auth = () => {
     const [loginPage, setLoginPage] = useState(true);
+
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+
+    const register = async () => {
+        try {
+            const response = await axios.post('/auth/register', { firstName, lastName, email, phone, password, username });
+            toast.success(response.data.message);
+        } catch (err) {
+            toast.error(err.response.data.message);
+        }
+    }
+
     return (
         <div className='w-full h-screen flex items-center justify-center font-Ubuntu'>
             <div className='w-1/2 flex  border border-gray-200 rounded-md overflow-hidden'>
@@ -23,6 +45,8 @@ const Auth = () => {
                         </div>
                     )}
                 </div>
+
+                {/* signup page code */}
                 {!loginPage && (
                     <div className='flex flex-col p-1'>
                         <p className='mb-2 mx-1 text-[30px] text-Bluedark'>REGISTER FORM</p>
@@ -30,53 +54,62 @@ const Auth = () => {
                             <div className='m-1'>
                                 <p className='text-[10px]'>First Name</p>
                                 <div className='border border-gray-300'>
-                                    <input className='outline-none border-none p-1 w-full' type="text" />
+                                    <input value={firstName} onChange={(e) => setFirstName(e.target.value)} className='outline-none border-none p-1 w-full' type="text" />
                                 </div>
                             </div>
                             <div className='m-1'>
                                 <p className='text-[10px]'>Last Name</p>
                                 <div className='border border-gray-300'>
-                                    <input className='outline-none border-none p-1 w-full' type="text" />
+                                    <input value={lastName} onChange={(e) => setLastName(e.target.value)} className='outline-none border-none p-1 w-full' type="text" />
                                 </div>
                             </div>
                         </div>
                         <div className='m-1'>
                             <p className='text-[10px]'>Email</p>
                             <div className='border border-gray-300'>
-                                <input className='w-full outline-none border-none p-1' type="text" />
+                                <input value={email} onChange={(e) => setEmail(e.target.value)} className='w-full outline-none border-none p-1' type="text" />
                             </div>
                         </div>
                         <div className='m-1'>
                             <p className='text-[10px]'>Phone</p>
                             <div className='border border-gray-300'>
-                                <input className='outline-none border-none p-1 w-full' type="text" />
+                                <input value={phone} onChange={(e) => setPhone(e.target.value)} className='outline-none border-none p-1 w-full' type="text" />
                             </div>
                         </div>
                         <div className='m-1'>
-                            <p className='text-[10px]'>Password</p>
+                            <p className='text-[10px]'>Username</p>
                             <div className='border border-gray-300'>
-                                <input className='outline-none border-none p-1 w-full' type="text" />
+                                <input value={username} onChange={(e) => setUsername(e.target.value)} className='w-full outline-none border-none p-1' type="text" />
                             </div>
                         </div>
-                        <div className='m-1'>
-                            <p className='text-[10px]'>Confirm Password</p>
-                            <div className='border border-gray-300'>
-                                <input className='outline-none border-none p-1 w-full' type="text" />
+                        <div className='flex'>
+                            <div className='m-1'>
+                                <p className='text-[10px]'>Password</p>
+                                <div className='border border-gray-300'>
+                                    <input value={password} onChange={(e) => setPassword(e.target.value)} className='outline-none border-none p-1 w-full' type="text" />
+                                </div>
+                            </div>
+                            <div className='m-1'>
+                                <p className='text-[10px]'>Confirm Password</p>
+                                <div className='border border-gray-300'>
+                                    <input value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} className='outline-none border-none p-1 w-full' type="text" />
+                                </div>
                             </div>
                         </div>
                         <div className='flex items-center text-[10px] m-1'>
                             <input className='cursor-pointer' type="checkbox" />
                             <p className='mx-1'>I agree to terms & conditions <sup className='text-red-500'>*</sup> </p>
                         </div>
-                        <button className='bg-Bluedark text-white rounded-sm w-fit py-2 px-4 m-1'>Register</button>
+                        <button className='bg-Bluedark text-white rounded-sm w-fit py-2 px-4 m-1' onClick={register}>Register</button>
                     </div>
                 )}
 
+                {/* login page code */}
                 {loginPage && (
                     <div className='flex flex-col p-1 w-1/2'>
                         <p className='mb-2 mx-1 text-[30px] text-Bluedark'>LOGIN FORM</p>
                         <div className='m-1'>
-                            <p className='text-[10px]'>Email/Phone</p>
+                            <p className='text-[10px]'>Username</p>
                             <div className='border border-gray-300'>
                                 <input className='w-full outline-none border-none p-1' type="text" />
                             </div>
@@ -87,7 +120,7 @@ const Auth = () => {
                                 <input className='outline-none border-none p-1 w-full' type="text" />
                             </div>
                         </div>
-                        <button className='bg-Bluedark text-white rounded-sm w-fit py-2 px-4 m-1'>Register</button>
+                        <button className='bg-Bluedark text-white rounded-sm w-fit py-2 px-4 m-1'>Login</button>
                     </div>
                 )}
             </div>
