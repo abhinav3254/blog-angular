@@ -24,6 +24,18 @@ const Auth = () => {
         }
     }
 
+    const login = async () => {
+        try {
+            const response = await axios.post('/auth/login', { username, password });
+            localStorage.setItem('token', response.data.message);
+            toast.success('Succesfully logged in');
+            setUsername('');
+            setPassword('');
+        } catch (err) {
+            toast.error(err.response.data.message);
+        }
+    }
+
     return (
         <div className='w-full h-screen flex items-center justify-center font-Ubuntu'>
             <div className='w-1/2 flex  border border-gray-200 rounded-md overflow-hidden'>
@@ -111,16 +123,16 @@ const Auth = () => {
                         <div className='m-1'>
                             <p className='text-[10px]'>Username</p>
                             <div className='border border-gray-300'>
-                                <input className='w-full outline-none border-none p-1' type="text" />
+                                <input value={username} onChange={(e) => setUsername(e.target.value)} className='w-full outline-none border-none p-1' type="text" />
                             </div>
                         </div>
                         <div className='m-1'>
                             <p className='text-[10px]'>Password</p>
                             <div className='border border-gray-300'>
-                                <input className='outline-none border-none p-1 w-full' type="text" />
+                                <input value={password} onChange={(e) => setPassword(e.target.value)} className='outline-none border-none p-1 w-full' type="text" />
                             </div>
                         </div>
-                        <button className='bg-Bluedark text-white rounded-sm w-fit py-2 px-4 m-1'>Login</button>
+                        <button className='bg-Bluedark text-white rounded-sm w-fit py-2 px-4 m-1' onClick={login}>Login</button>
                     </div>
                 )}
             </div>
