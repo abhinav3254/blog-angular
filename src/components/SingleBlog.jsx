@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate, } from 'react-router-dom';
 
 const SingleBlog = ({ blog }) => {
+
+    const navigate = useNavigate();
+
 
     const trimLength = (value) => {
         if (value.length > 150) {
@@ -8,6 +12,11 @@ const SingleBlog = ({ blog }) => {
         }
         return value;
     }
+
+    const goToDetails = (id) => {
+        console.log(id);
+        navigate(`/blog/${id}`, { replace: true });
+    };
 
     return (
         <div>
@@ -19,7 +28,7 @@ const SingleBlog = ({ blog }) => {
                         <p className='text-[10px]'>{blog.createdDate}</p>
                     </div>
                 </div>
-                <div className='flex cursor-pointer'>
+                <div className='flex cursor-pointer' onClick={() => goToDetails(blog.id)}>
                     <div className='w-full'>
                         <p className='text-black font-bold text-lg'>
                             {blog.title}
