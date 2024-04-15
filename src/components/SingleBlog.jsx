@@ -3,6 +3,7 @@ import { useNavigate, } from 'react-router-dom';
 
 const SingleBlog = ({ blog }) => {
 
+    // for navigation
     const navigate = useNavigate();
 
 
