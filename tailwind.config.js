@@ -6,10 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Ubuntu: 'Ubuntu'
-      },
-      colors: {
-        Bluedark: '#3786be'
+        'nunito': 'Nunito'
       }
     },
   },
