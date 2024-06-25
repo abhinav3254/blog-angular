@@ -24,7 +24,7 @@ export const projectsList = [
         'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
     },
     {
-        'id': 3,
+        'id': 4,
         'name': 'Blog Microservices(Java)',
         'img': 'https://github.com/abhinav3254/movie-angular/raw/master/snapshots/one.png',
         'link': 'https://github.com/abhinav3254/movie-angular',
@@ -32,7 +32,7 @@ export const projectsList = [
         'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
     },
     {
-        'id': 4,
+        'id': 5,
         'name': 'acountify(Android)',
         'img': 'https://github.com/abhinav3254/acountify/raw/master/screenshots/ss01.png',
         'link': 'https://github.com/abhinav3254/acountify',
@@ -40,7 +40,7 @@ export const projectsList = [
         'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
     },
     {
-        'id': 5,
+        'id': 6,
         'name': 'WWE(Ionic Android)',
         'img': 'https://github.com/abhinav3254/ionic-wwe/raw/master/src/assets/snapshots/arbic.png',
         'link': 'https://github.com/abhinav3254/ionic-wwe',
@@ -48,7 +48,7 @@ export const projectsList = [
         'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
     },
     {
-        'id': 6,
+        'id': 7,
         'name': 'Kontest(Android)',
         'img': 'https://github.com/abhinav3254/Kontest-Android/raw/master/snapshots/two.png',
         'link': 'https://github.com/abhinav3254/Kontest-Android',
@@ -56,11 +56,35 @@ export const projectsList = [
         'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
     },
     {
-        'id': 6,
+        'id': 8,
         'name': 'My Eyes(Android)',
-        'img': 'https://github.com/abhinav3254/Kontest-Android/raw/master/snapshots/two.png',
+        'img': 'https://github.com/abhinav3254/blog-angular/blob/master/src/images/snapshots/my-eyes.png?raw=true',
         'link': 'https://github.com/abhinav3254/Kontest-Android',
-        'tech': ['Android', 'Java', 'SQLite', 'Retrofit'],
+        'tech': ['Android', 'Java', 'SQLite', 'Python', 'Machine Learning'],
+        'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
+    },
+    {
+        'id': 9,
+        'name': 'COVID-19(Android)',
+        'img': 'https://github.com/abhinav3254/blog-angular/blob/master/src/images/snapshots/covid.png?raw=true',
+        'link': 'https://github.com/abhinav3254/Kontest-Android',
+        'tech': ['Android', 'Java', 'Retrofit'],
+        'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
+    },
+    {
+        'id': 10,
+        'name': 'Book Store',
+        'img': 'https://placehold.co/600x400',
+        'link': 'https://github.com/abhinav3254/Kontest-Android',
+        'tech': ['Java-11', 'Spring-2.0.17', 'Angular-16', 'JWT', 'Spring Security', 'MySQL'],
+        'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
+    },
+    {
+        'id': 10,
+        'name': 'Hand gesture control',
+        'img': 'https://github.com/abhinav3254/openCV/raw/main/snapshots/three.png',
+        'link': 'https://github.com/abhinav3254/openCV',
+        'tech': ['OpenCV', 'Python'],
         'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
     }
 ];
