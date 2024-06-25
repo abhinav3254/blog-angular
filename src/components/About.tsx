@@ -14,7 +14,7 @@ const About = () => {
 
                 <div className='lg:w-1/2 text-sm'>
                     <p>
-                        Hi there! I'm Abhinav Jha, hailing from the vibrant town of <a href="https://en.wikipedia.org/wiki/Darbhanga" className='text-blue-500 underline font-thin'>Darbhanga</a> in Bihar. With a year of hands-on experience in software development, I have carved my niche as a full-stack developer.
+                        Hi there! I'm Abhinav Jha, hailing from the vibrant town of <a href="https://en.wikipedia.org/wiki/Darbhanga" target='_blank' className='text-blue-500 underline font-thin'>Darbhanga</a> in Bihar. With a year of hands-on experience in software development, I have carved my niche as a full-stack developer.
                     </p>
                     <h1 className='text-[20px] font-bold text-slate-500 underline my-2'>
                         My Journey in Tech

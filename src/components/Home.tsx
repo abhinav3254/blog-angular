@@ -15,6 +15,11 @@ const Home = () => {
                             <p className='text-sm'>Hi, my name is</p>
                             <p className='text-[30px] lg:text-[60px]'>Abhinav <span className='font-thin text-purple-500'>Jha</span></p>
                             <p className='text-[20px] lg:text-[40px]'>Software Engineer</p>
+                            <p className='text-[12px] lg:text-[20px] my-1'>
+                                <span className='text-[15px] lg:text-[20px] text-blue-500'>MERN</span> |
+                                <span className='text-[15px] lg:text-[20px] text-blue-500'> MEAN</span> |
+                                <span className='text-[15px] lg:text-[20px] text-blue-500'> Java Full Stack</span>
+                            </p>
                             <p className='text-[20px]'>Coding with a purpose 😌</p>
                         </div>
                     </div>
