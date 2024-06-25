@@ -41,6 +41,9 @@ const Projects = () => {
                 </div>
             ))
             }
+            <div className='flex justify-center items-center my-5'>
+                <a href='https://github.com/abhinav3254' target='_blank' className='bg-blue-500 px-5 py-2 text-white shadow-lg'>View More</a>
+            </div>
         </div >
     )
 }

@@ -6,6 +6,7 @@ import Nav from './components/Nav/Nav'
 import About from './components/About'
 import Footer from './components/Footer'
 import Projects from './components/Projects'
+import NotFound from './components/NotFound'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='about' element={<About />} />
           <Route path='skills' element={<Skills />} />
           <Route path='projects' element={<Projects />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </div>
       <Footer />

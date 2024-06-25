@@ -48,7 +48,7 @@ export const certifications = [
         "link": "https://www.hackerrank.com/certificates/d6d8d91ab3fb"
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "Node.js",
         "provider": "Hackerrank",
         "link": "https://www.hackerrank.com/certificates/d6d8d91ab3fb"

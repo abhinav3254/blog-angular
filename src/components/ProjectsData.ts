@@ -25,7 +25,7 @@ export const projectsList = [
     },
     {
         'id': 4,
-        'name': 'Blog Microservices(Java)',
+        'name': 'Movies',
         'img': 'https://github.com/abhinav3254/movie-angular/raw/master/snapshots/one.png',
         'link': 'https://github.com/abhinav3254/movie-angular',
         'tech': ['React'],
@@ -80,11 +80,11 @@ export const projectsList = [
         'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
     },
     {
-        'id': 10,
-        'name': 'Hand gesture control',
-        'img': 'https://github.com/abhinav3254/openCV/raw/main/snapshots/three.png',
-        'link': 'https://github.com/abhinav3254/openCV',
-        'tech': ['OpenCV', 'Python'],
+        'id': 11,
+        'name': 'EXAM(MEAN)',
+        'img': 'https://github.com/abhinav3254/blog-angular/blob/master/src/images/snapshots/exam.png?raw=true',
+        'link': 'https://github.com/abhinav3254/mean-exam',
+        'tech': ['Angular', 'Java/Node.js', 'JWT', 'Spring-2.0.17', 'MySQL/MongoDB'],
         'desc': 'This Real-Time Chat Application is designed to facilitate instant messaging between users with real-time updates. Leveraging a modern tech stack, the application ensures a seamless and responsive user experience.'
     }
 ];
