@@ -29,7 +29,7 @@ export const SkillsList = [
     'WEB3', 'Solidity', 'HTML', 'CSS', 'JavaScript', 'React', 'Angular', 'jQuery', 'Typescript', 'SASS', 'Tailwind-CSS', // Web Development
     'Nodejs', 'Express', 'Java', 'Spring', 'Flask', 'Microservices', // Backend Development
     'Android', 'Ionic', // Mobile Development
-    'MySQL', 'MongoDB', 'SQLite', 'Neo4j', 'Postgresql', // Databases
+    'MySQL', 'MongoDB', 'SQLite', 'microsoft-sql-server', 'Neo4j', 'Postgresql', // Databases
     'Azure', 'Firebase', 'Linux', 'Github', // Cloud & DevOps
     'Hibernate', 'Open-Source', 'OpenCV', 'Python' // Others
 ];
